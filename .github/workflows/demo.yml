@@ -1,0 +1,8 @@
+name: Github actions demo
+on:
+  push:
+jobs:
+  demo:
+    runs-on: ubunut-latest
+    steps:
+      - run: echo "hello ${{ github.event_name }} event"
